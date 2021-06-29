@@ -30,10 +30,9 @@ pull_compile() {
 
 	if [ -d "${repo}" ]; then
 
-
 		cd ${repo} || exit 1
 
-		#git pull
+		git pull
 
 		./autogen.sh
 
